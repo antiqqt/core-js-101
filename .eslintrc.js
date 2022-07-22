@@ -13,7 +13,4 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
-  rules: {
-    "max-len": ["error", {"code": 120}],
-  },
 };

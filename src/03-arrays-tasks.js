@@ -480,7 +480,11 @@ function getIdentityMatrix(n) {
   const emptyRow = new Array(n).fill();
   const matrix = new Array(n).fill(emptyRow);
 
-  return matrix.map((row, rowIndex) => row.map((val, valIndex) => ((rowIndex === valIndex) ? 1 : 0)));
+  return matrix.map((row, rowIndex) => {
+    const filledRow = row.map((val, valIndex) => ((rowIndex === valIndex) ? 1 : 0));
+
+    return filledRow;
+  });
 }
 
 /**
